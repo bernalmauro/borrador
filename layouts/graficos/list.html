@@ -1,9 +1,6 @@
-{{ define "main" }}
+{{ partial "head" . }}
+{{ partial "header" . }}
 
-<div class="container">
+{{ .Content }}
 
- {{ partial "graficos" . }}
-
-</div>
-
-{{ end }}
+{{ partial "footer" . }}

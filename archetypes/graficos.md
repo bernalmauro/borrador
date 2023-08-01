@@ -4,7 +4,7 @@ author: "{{ .Site.Params.Author }}"
 draft: false
 menu:
   main:
-    identifier: "graficos"
+    identifier: "{{ replace .Name "-" " " | title }}"
     weight: 0 
     parent: ""
 ---
